@@ -1,4 +1,5 @@
 from app.extensions import db
+#ghasla
 
 class Exame(db.Model):
     __tablename__='Exame'
