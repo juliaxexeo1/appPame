@@ -3,8 +3,8 @@ from app.extensions import db
 class Exame(db.Model):
     __tablename__='Exame'
     id=db.Column(db.Integer, primary_key=True)
-    tipodeexame=db.column(db.String(30),nullable=False)
-    data=db.column(db.Integer,nullable=False)
-    hora=db.column(db.Integer,nullable=False)
+    tipodeexame=db.Column(db.String(30),nullable=False)
+    data=db.Column(db.Integer,nullable=False)
+    hora=db.Column(db.Integer,nullable=False)
 
-    paciente_id = db.column(db.Integer,db.ForeignKey('paciente.id'))
+    paciente_id = db.Column(db.Integer,db.ForeignKey('paciente.id'))

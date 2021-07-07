@@ -7,4 +7,4 @@ class Receita(db.Model):
     data=db.Column(db.Integer)
 
     
-consulta_id = db.Column(db.Integer,db.ForeignKey('consulta.id')) 
+    consulta_id = db.Column(db.Integer,db.ForeignKey('consulta.id')) 

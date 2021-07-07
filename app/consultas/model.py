@@ -6,7 +6,7 @@ class Consulta(db.Model):
     data = db.Column(db.Integer ,nullable=False)
     hora = db.Column(db.Integer,nullable=False)
 
-    medico_id = db.column(db.Integer,db.ForeignKey('medico.id'))
-    paciente_id = db.column(db.Integer,db.ForeignKey('paciente.id')) 
+    medico_id = db.Column(db.Integer,db.ForeignKey('medico.id'))
+    paciente_id = db.Column(db.Integer,db.ForeignKey('paciente.id')) 
     receitas=db.relationship('Receita',backref='consulta')
     
