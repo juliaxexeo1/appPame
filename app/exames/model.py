@@ -6,3 +6,5 @@ class Exame(db.Model):
     tipodeexame=db.column(db.String(30),nullable=False)
     data=db.column(db.Integer,nullable=False)
     hora=db.column(db.Integer,nullable=False)
+
+    paciente_id = db.column(db.Integer,db.ForeignKey('paciente.id'))

@@ -9,3 +9,4 @@ class Paciente(db.Model):
     pressao=db.Column(db.Integer,nullable=False)
     
     consultas=db.relationship('Consulta',backref='paciente')
+    exames=db.relationship('Exame',backref='paciente')
