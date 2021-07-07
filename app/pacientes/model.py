@@ -10,3 +10,4 @@ class Paciente(db.Model):
     
     consultas=db.relationship('Consulta',backref='paciente')
     exames=db.relationship('Exame',backref='paciente')
+
