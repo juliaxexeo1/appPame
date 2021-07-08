@@ -7,6 +7,7 @@ class Paciente(db.Model):
     cpf=db.Column(db.Integer,nullable=False)
     temperatura=db.Column(db.Integer,nullable=False)
     pressao=db.Column(db.Integer,nullable=False)
+    data_de_nascimento=db.Column(db.DateTime,nullable=False)
     
     consultas=db.relationship('Consulta',backref='paciente')
     exames=db.relationship('Exame',backref='paciente')
